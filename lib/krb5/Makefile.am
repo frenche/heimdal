@@ -11,6 +11,7 @@ noinst_PROGRAMS =				\
 	test_alname				\
 	test_crypto				\
 	test_forward				\
+	test_mkforwardable			\
 	test_get_addrs				\
 	test_gic				\
 	test_kuserok				\
@@ -273,6 +274,7 @@ ALL_OBJECTS += $(krbhst_test_OBJECTS)
 ALL_OBJECTS += $(test_alname_OBJECTS)
 ALL_OBJECTS += $(test_crypto_OBJECTS)
 ALL_OBJECTS += $(test_forward_OBJECTS)
+ALL_OBJECTS += $(test_mkforwardable_OBJECTS)
 ALL_OBJECTS += $(test_get_addrs_OBJECTS)
 ALL_OBJECTS += $(test_gic_OBJECTS)
 ALL_OBJECTS += $(test_kuserok_OBJECTS)
