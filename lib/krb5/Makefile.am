@@ -11,7 +11,6 @@ noinst_PROGRAMS =				\
 	test_alname				\
 	test_crypto				\
 	test_forward				\
-	test_mkforwardable			\
 	test_get_addrs				\
 	test_gic				\
 	test_kuserok				\
@@ -51,7 +50,8 @@ TESTS =						\
 
 check_DATA = test_config_strings.out
 
-check_PROGRAMS = $(TESTS) test_hostname test_ap-req test_canon test_set_kvno0
+check_PROGRAMS = $(TESTS) test_hostname test_ap-req test_canon test_set_kvno0 \
+		test_mkforwardable
 
 LDADD = libkrb5.la \
 	$(LIB_hcrypto) \
@@ -274,7 +274,6 @@ ALL_OBJECTS += $(krbhst_test_OBJECTS)
 ALL_OBJECTS += $(test_alname_OBJECTS)
 ALL_OBJECTS += $(test_crypto_OBJECTS)
 ALL_OBJECTS += $(test_forward_OBJECTS)
-ALL_OBJECTS += $(test_mkforwardable_OBJECTS)
 ALL_OBJECTS += $(test_get_addrs_OBJECTS)
 ALL_OBJECTS += $(test_gic_OBJECTS)
 ALL_OBJECTS += $(test_kuserok_OBJECTS)
